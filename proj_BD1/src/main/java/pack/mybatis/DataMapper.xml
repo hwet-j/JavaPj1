@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dev">
+	<!-- 회원가입 -->
+	<insert id="signupMem" parameterType="memBean">
+		insert into member values(#{mem_id}, #{mem_pass}, #{mem_name}, #{mem_gen}, #{mem_tel}, #{mem_birthD})
+	</insert>
+<!-- 정회창 =================================== -->
+	<!--  
+	<select id="availableRes" resultType="rdto" parameterType="rbean">
+		select * from reservation where (res_start BETWEEN #{res_start} AND #{res_end}) 
+		or (res_end BETWEEN #{res_start} AND #{res_end}) 
+		and res_date = #{res_date} and room_id = #{room_id}
+	</select>
+	
+	<select id="roomPrice" resultType="int" parameterType="String">
+		select room_1hc from room
+		where room_id=#{room_id}
+	</select>
+	<insert id="reservationInsert" parameterType="rbean">
+		insert into reservation values(#{res_id}, #{mem_id}, #{room_id}, #{res_start}, #{res_end}, #{res_date})
+	</insert>
+
+	<update id="payUpdate" parameterType="pbean">
+		insert into payment values(#{pay_id}, #{res_id}, #{pay_time}, #{pay_cost}, #{mem_id}, #{room_id})
+	</update>
+	
+	<delete id="reservationDelete" parameterType="string">
+		delete from reservation where res_id = #{res_id} 
+	</delete>
+-->
+	
+</mapper>

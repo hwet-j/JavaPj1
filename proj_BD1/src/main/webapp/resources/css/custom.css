@@ -1,0 +1,37 @@
+
+/** ADD YOUR AWESOME CODES HERE **/
+
+
+.modal-body.customer-box .tab-content .form-group .form-control2{
+	background-color: #fff;
+	margin-bottom: 30px;
+	border: 1px solid #ebebeb;
+	box-sizing: border-box;
+	color: #bcbcbc;
+	font-size: 16px;
+	outline: 0 none;
+	padding: 10px 25px;
+	height: 55px;
+	resize: none;
+	box-shadow: none !important;
+	width: 32%;
+}
+
+.rescol{
+	color: #00ffffff;
+}
+
+.res_form .form-control3{
+	background-color: #fff;
+	margin-bottom: 30px;
+	border: 1px solid #ebebeb;
+	box-sizing: border-box;
+	color: #bcbcbc;
+	font-size: 16px;
+	outline: 0 none;
+	padding: 10px 25px;
+	height: 55px;
+	resize: none;
+	box-shadow: none !important;
+	width: 45%;
+}
